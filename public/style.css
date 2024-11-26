@@ -1,0 +1,58 @@
+h1 {
+  color: red;
+}
+/* General styling for the navigation bar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background */
+  color: white; /* Text color */
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Styling the unordered list */
+.navbar-nav {
+  display: flex; /* Horizontal arrangement of elements */
+  justify-content: space-around; /* Equal spacing between items */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullets */
+}
+
+/* Styling each nav item */
+.nav-item {
+  margin: 0 10px; /* Space between nav items */
+}
+
+/* Styling links */
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px; /* Padding for clickable area */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #333; /* Text color on hover */
+  background-color: #f1c40f; /* Highlight background */
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* Active class styling */
+.nav-link.active {
+  color: #333; /* Text color for active link */
+  background-color: #f1c40f; /* Highlight background */
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* Adjust the body content to prevent overlap */
+body {
+  margin-top: 60px; /* Push content down to make space for fixed navbar */
+}
